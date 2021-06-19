@@ -1,73 +1,22 @@
 import React from "react";
-import { Grid, Typography } from "@material-ui/core";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import InstagramIcon from "@material-ui/icons/Instagram";
+import { Grid } from "@material-ui/core";
 
+import LeftMain from "../LeftMain/index";
+import RightMain from "../RightMain/index";
 import styles from "./styles";
 
 const Landing = () => {
   const classes = styles();
   return (
-    <Grid conatiner className={classes.main}>
-      <Grid item className={classes.sub}>
+    <Grid container className={classes.main}>
+      <Grid item xs={12} className={classes.sub}>
         <Grid container>
-          <Grid
-            container
-            direction="column"
-            item
-            xs={3}
-            className={classes.leftContainer}
-          >
-            <Grid item className={classes.profilePic} />
-            <Grid item>
-              <Typography variant="h6">PRAVEEN SINNUR</Typography>
-            </Grid>
-            <Grid item>
-              <Typography variant="body1">Software Engineer</Typography>
-            </Grid>
-            <Grid
-              container
-              direction="column"
-              spacing="4"
-              className={classes.navContainer}
-            >
-              <Grid item>iamge</Grid>
-              <Grid item>iamge</Grid>
-              <Grid item>iamge</Grid>
-              <Grid item>iamge</Grid>
-            </Grid>
-            <Grid container spacing={4} className={classes.socialContainer}>
-              <Grid item>
-                <a
-                  href="https://github.com/ps-lolfan"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <GitHubIcon className={classes.icon} />
-                </a>
-              </Grid>
-              <Grid item>
-                <a
-                  href="https://linkedin.com/in/praveen-sinnur"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <LinkedInIcon className={classes.icon} />
-                </a>
-              </Grid>
-              <Grid item>
-                <a
-                  href="https://www.instagram.com/praveen_sinnur/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <InstagramIcon className={classes.icon} />
-                </a>
-              </Grid>
-            </Grid>
+          <Grid item xs={3}>
+            <LeftMain />
           </Grid>
-          <Grid container item xs={9}></Grid>
+          <Grid item xs={9}>
+            <RightMain />
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
