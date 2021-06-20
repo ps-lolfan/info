@@ -3,7 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
-
+import { Link } from "react-router-dom";
 import styles from "./styles";
 
 const LeftMain = () => {
@@ -31,16 +31,24 @@ const LeftMain = () => {
           className={classes.navContainer}
         >
           <Grid item>
-            <Typography variant="h6">About</Typography>
+            <Link to="/">
+              <Typography variant="h6">About</Typography>
+            </Link>
           </Grid>
           <Grid item>
-            <Typography variant="h6">My Work</Typography>
+            <Link to="/work">
+              <Typography variant="h6">My Work</Typography>
+            </Link>
           </Grid>
           <Grid item>
-            <Typography variant="h6">Experience</Typography>
+            <Link to="/experience">
+              <Typography variant="h6">Experience</Typography>
+            </Link>
           </Grid>
           <Grid item>
-            <Typography variant="h6">Contact</Typography>
+            <Link to="/contact">
+              <Typography variant="h6">Contact</Typography>
+            </Link>
           </Grid>
         </Grid>
         <Grid container spacing={4} className={classes.socialContainer}>
