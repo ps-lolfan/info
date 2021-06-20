@@ -29,12 +29,16 @@ const RightMain = () => {
           </Tooltip>
         </Grid>
       </Grid>
-      <Switch>
-        <Route path="/" exact component={About} />
-        <Route path="/work" exact component={Work} />
-        <Route path="/experience" exact component={Experience} />
-        <Route path="/contact" exact component={Contact} />
-      </Switch>
+      <Grid container>
+        <Grid item className={classes.innerContainer}>
+          <Switch>
+            <Route path="/" exact component={About} />
+            <Route path="/work" exact component={Work} />
+            <Route path="/experience" exact component={Experience} />
+            <Route path="/contact" exact component={Contact} />
+          </Switch>
+        </Grid>
+      </Grid>
     </>
   );
 };

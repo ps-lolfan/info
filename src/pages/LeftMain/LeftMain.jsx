@@ -19,7 +19,9 @@ const LeftMain = () => {
       >
         <Grid item className={classes.profilePic} />
         <Grid item>
-          <Typography variant="h5">PRAVEEN SINNUR</Typography>
+          <Typography variant="h5" color="primary">
+            PRAVEEN SINNUR
+          </Typography>
         </Grid>
         <Grid item>
           <Typography variant="body1">Software Engineer</Typography>

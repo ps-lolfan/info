@@ -9,7 +9,7 @@ const styles = makeStyles({
         height: "100vh",
     },
     sub: {
-        backgroundColor: "#f7f5ed40",
+        backgroundColor: "#f7f5ed33",
         position: "absolute",
         left: "150px",
         bottom: "50px",

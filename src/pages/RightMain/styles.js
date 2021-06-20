@@ -13,6 +13,11 @@ const styles = makeStyles({
         fontSize: "30px",
         margin: '10px'
     },
+    innerContainer: {
+        marginLeft: '5%',
+        marginRight: '5%',
+        marginBottom: '5%',
+    }
 });
 
 export default styles
